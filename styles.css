@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 245, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+}
+
+.main-container1 {
+  display: flex;
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  gap: 20px; /* Space between sidebar and right-container */
+  background-color: white; /* Just for visibility */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.side-bar {
+  background-image: url("./images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  width: 250px; /* Adjust width as needed */
+  height: 520px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  width: 350px; /* Adjust as needed */
+  height: 400px; /* Match sidebar height */
+  border-radius: 10px; /* Optional */
+}
