@@ -22,7 +22,6 @@ body {
   background-color: white; /* Just for visibility */
   padding: 20px;
   border-radius: 10px; /* Optional: Adds rounded corners */
-  
 }
 
 .side-bar {
@@ -35,20 +34,20 @@ body {
   flex-direction: column;
   color: white;
   padding: 20px;
-  
 }
 
 .right-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #fff; /* White background */
   padding: 20px;
   width: 350px; /* Adjust as needed */
   height: 400px; /* Match sidebar height */
   border-radius: 10px; /* Optional */
   flex: 2;
+  position: relative;
 }
 
 .side-bar ul {
@@ -67,7 +66,7 @@ body {
 p {
   font-size: 11px;
   &:hover {
-    cursor: pointer
+    cursor: pointer;
   }
 }
 
@@ -76,7 +75,7 @@ p > span {
   font-weight: bold;
   display: block;
   &:hover {
-    cursor: pointer
+    cursor: pointer;
   }
 }
 
@@ -90,7 +89,7 @@ p > span {
   align-items: center; /* Centers content vertically */
   text-align: center; /* Ensures text stays centered */
   &:hover {
-    cursor: pointer
+    cursor: pointer;
   }
 }
 
@@ -122,7 +121,7 @@ p > span {
   font-size: 2px;
 }
 
-input::placeholder{
+input::placeholder {
   color: gray;
   font-size: smaller;
 }
@@ -141,7 +140,6 @@ input::placeholder{
   outline: none;
 }
 
-
 .input-container .name .email .phone-number p {
   color: #03295a;
 }
@@ -157,7 +155,10 @@ input::placeholder{
   padding: 10px 16px;
   align-items: flex-end;
   justify-content: flex-end;
-
-  
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  &:hover {
+    cursor: pointer;
+  }
 }
-
