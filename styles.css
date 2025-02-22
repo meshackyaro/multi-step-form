@@ -22,6 +22,7 @@ body {
   background-color: white; /* Just for visibility */
   padding: 20px;
   border-radius: 10px; /* Optional: Adds rounded corners */
+  
 }
 
 .side-bar {
@@ -44,9 +45,10 @@ body {
   background-color: #fff; /* White background */
   padding: 20px;
   width: 350px; /* Adjust as needed */
-  height: 400px; /* Match sidebar height */
+  height: 80vh; /* Match sidebar height */
   border-radius: 10px; /* Optional */
   flex: 2;
+  
   position: relative;
 }
 
@@ -129,6 +131,8 @@ input::placeholder {
 .input-container {
   width: 100%;
   max-width: 300%;
+  height: 50vh;
+  margin-top: 30px;
 }
 
 .input-container input {
@@ -136,12 +140,17 @@ input::placeholder {
   border-radius: 5px;
   width: 100%;
   height: 30px;
-  padding: 10px;
+  padding: 20px 2px;
   outline: none;
 }
 
 .input-container .name .email .phone-number p {
   color: #03295a;
+  margin-bottom: 10px;
+}
+.input-container p {
+  margin-top: 15px;
+  
 }
 
 .right-container button {
@@ -153,6 +162,7 @@ input::placeholder {
   /* width: 100px; */
   border-radius: 5px;
   padding: 10px 16px;
+  margin-top: 20px;
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
