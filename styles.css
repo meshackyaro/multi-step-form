@@ -95,21 +95,6 @@ p > span {
   }
 }
 
-/* .side-bar > div > p {
-  margin-right: 10px;
-  margin-top: 40px;
-  border-radius: 50px;
-  width: 20px;
-  height: 20px;
-  background-color: #483eff;
-  justify-content: center;
-  display: flex;
-  border: 1px solid white;
-  &:hover {
-    cursor: pointer;
-  }
-} */
-
 .right-container .personal-info {
   font-size: 30px;
 }
