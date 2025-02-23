@@ -136,7 +136,23 @@ input::placeholder {
   margin-top: 15px;
 }
 
-.right-container button {
+.right-container .right-button {
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  margin-top: 20px;
+  bottom: 20px;
+  right: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.right-container .left-button {
   background-color: #03295a;
   color: #fff;
   font-size: 11px;
@@ -145,16 +161,12 @@ input::placeholder {
   border-radius: 5px;
   padding: 10px 16px;
   margin-top: 20px;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   &:hover {
     cursor: pointer;
   }
 }
-
 .right-container .select-plan {
   font-size: 30px;
 }
@@ -169,11 +181,12 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  width: 55vh;
   gap: 15px;
 }
 
 .right-container .billing-plans .monthly-arcade {
-  border: 1.8px solid rgb(204,204,204);
+  border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
   padding: 15px 50px 5px 10px;
 }
@@ -183,30 +196,52 @@ input::placeholder {
 }
 
 .right-container .billing-plans .monthly-advanced {
-  border: 1.8px solid rgb(204,204,204);
+  border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
   padding: 15px 50px 5px 10px;
 }
 
 .right-container .billing-plans .monthly-pro {
-  border: 1.8px solid rgb(204,204,204);
+  border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
   padding: 15px 50px 5px 10px;
 }
 
-.right-container .buttons  {
+.right-container .buttons {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  column-gap: 150px;
+}
+
+.right-container .button{
+ background-color: #03295a;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  margin-top: 20px;
+  bottom: 20px;
+  align-items: flex-end;
+  position: absolute;
+  right: 10px;
+  &:hover {
+    cursor: pointer;
+  } 
+  
+  
 }
 
 .right-container .monthly-yearly-toggle {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid rgb(204,204,204);
+  border: 1px solid rgb(204, 204, 204);
   margin-top: 25px;
   height: 40px;
+  background-color: #efefef;
 }
 
 .right-container .monthly-yearly-toggle .yearly {
