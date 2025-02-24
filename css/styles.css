@@ -227,11 +227,11 @@ input::placeholder {
 .right-container .button{
   background-color: #03295a;
   color: #fff;
-  font-size: 11px;
+  font-size: 11pxpx;
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  padding: 10px 16px;
+  padding: 18px 38px;
   margin-top: 20px;
   bottom: 20px;
   align-items: flex-end;
@@ -370,4 +370,13 @@ input:checked + .slider::before {
   display: flex;
 }
 
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adds space between the p and span */
+}
 
+.text-content span {
+  font-size: 12px;
+  color: gray;
+}
