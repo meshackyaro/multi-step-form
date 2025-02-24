@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multi Step Form</title>
-    <link rel="stylesheet" , href="styles.css" />
+    <link rel="stylesheet" , href="../css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -34,44 +34,48 @@
         <div>
           <p class="p-tag-1">4</p>
           <div class="step">
-            <p>STEP 4 <span>SUMMARY</span></p>
+            <p>STEP 4<span>SUMMARY</span></p>
           </div>
         </div>
       </ul>
       <div class="right-container">
-        <div class="select-plan">
+        <div class="add-ons">
           <div>
             <h4>
-              Select your plan
-              <span>You have the option of monthly or yearly billing</span>
+              Pick add-ons
+              <span>Add-ons help enhance your gaming experience</span>
             </h4>
           </div>
-          <div class="billing-plans">
-            <div class="monthly-arcade">
-              <img src="./images/icon-arcade.svg" alt="arcade" />
-              <p>Arcade</p>
-              <span>$9/mon</span>
+          <div class="options">
+            <div class="online-service">
+              <label class="custom-checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <p class="online">Online service</p>
+              <span>Access to multiplayer games</span>
+              <p>+$10/yr</p>
             </div>
 
-            <div class="monthly-advanced">
-              <img src="./images/icon-advanced.svg" alt="arcade" />
-              <p>Advanced</p>
-              <span>$12/mon</span>
+            <div class="larger-storage">
+              <label class="custom-checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <p class="storage">Larger storage</p>
+              <span>Extra 1TB of cloud save</span>
+              <p>+$20/yr</p>
             </div>
 
-            <div class="monthly-pro">
-              <img src="./images/icon-pro.svg" alt="arcade" />
-              <p>Pro</p>
-              <span>$15/mon</span>
+            <div class="customizable-profile">
+              <label class="custom-checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <p class="profile">Customizable profile</p>
+              <span>Custom theme on your profile</span>
+              <p>+$20/yr</p>
             </div>
-          </div>
-          <div class="monthly-yearly-toggle">
-            <p class="monthly">Monthly</p>
-            <label class="toggle">
-              <input type="checkbox" id="toggle-switch">
-              <span class="slider"></span>
-            </label>
-            <span class="yearly">Yearly</span>
           </div>
         </div>
         <div class="buttons">
@@ -81,6 +85,6 @@
       </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

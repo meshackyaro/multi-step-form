@@ -25,7 +25,7 @@ body {
 }
 
 .side-bar {
-  background-image: url("./images/bg-sidebar-desktop.svg");
+  background-image: url("../assets/bg-sidebar-desktop.svg");
   background-size: cover;
   background-position: center;
   width: 250px; /* Adjust width as needed */
@@ -321,10 +321,30 @@ input:checked + .slider::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 50px;
-  width: 55vh;
+  width: 100%;
   gap: 15px;
+}
+
+.right-container .options div {
+  border: 1.8px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center; /* Aligns content inside vertically */
+  justify-content: space-between; /* Ensures equal spacing between elements */
+  width: 80%; /* Ensures same width for all */
+  max-width: 400px; /* Prevents excessive stretching */
+  min-height: 50px; /* Makes all elements the same height */
+  box-sizing: border-box; /* Ensures padding doesn't affect size */
+}
+
+/* Ensure the text inside is aligned properly */
+.right-container .options div p {
+  margin: 0;
+  flex: 1; /* Allows text to grow evenly */
+  text-align: left;
 }
 
 .right-container .options .online-service {
