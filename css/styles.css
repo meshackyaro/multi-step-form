@@ -40,10 +40,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #fff; /* White background */
-  padding: 20px;
-  width: 350px; /* Adjust as needed */
+  /* padding: 20px; */
+  width: 400px; /* Adjust as needed */
   height: 80vh; /* Match sidebar height */
   border-radius: 10px; /* Optional */
   flex: 2;
@@ -137,7 +137,7 @@ input::placeholder {
   margin-top: 15px;
 }
 
-.right-container .right-button {
+.right-container .left-button {
   color: black;
   font-size: 11px;
   font-weight: bold;
@@ -152,8 +152,7 @@ input::placeholder {
   }
 }
 
-
-.right-container .left-button {
+.right-container .right-button {
   background-color: #03295a;
   color: #fff;
   font-size: 11px;
@@ -190,7 +189,6 @@ input::placeholder {
   border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
   padding: 15px 50px 5px 10px;
-
 }
 
 .right-container .billing-plans .arcade {
@@ -224,14 +222,14 @@ input::placeholder {
   column-gap: 150px;
 }
 
-.right-container .button{
+.right-container .button {
   background-color: #03295a;
-  color: #fff;
-  font-size: 11pxpx;
+  color: white;
+  font-size: 11px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  padding: 18px 38px;
+  padding: 10px 20px;
   margin-top: 20px;
   bottom: 20px;
   align-items: flex-end;
@@ -239,8 +237,7 @@ input::placeholder {
   right: 10px;
   &:hover {
     cursor: pointer;
-  }  
-  
+  }
 }
 
 .right-container .monthly-yearly-toggle {
@@ -307,6 +304,11 @@ input:checked + .slider::before {
   transform: translateX(24px);
 }
 
+.right-container .add-ons{
+  /* border: 3px solid blue; */
+  width: 80%;
+}
+
 .right-container .add-ons h4 {
   font-size: 30px;
 }
@@ -322,20 +324,22 @@ input:checked + .slider::before {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-right: 100px;
   width: 100%;
   gap: 15px;
+
 }
 
 .right-container .options div {
-  border: 1.8px solid rgb(204, 204, 204);
-  border-radius: 5px;
-  padding: 15px;
+  /* border: 1.8px solid rgb(204, 204, 204);
+  border-radius: 5px; */
+  padding: 10px;
   display: flex;
   align-items: center; /* Aligns content inside vertically */
   justify-content: space-between; /* Ensures equal spacing between elements */
-  width: 80%; /* Ensures same width for all */
-  max-width: 400px; /* Prevents excessive stretching */
+  width: 100%; /* Ensures same width for all */
+  /* max-width: 400px; Prevents excessive stretching */
   min-height: 50px; /* Makes all elements the same height */
   box-sizing: border-box; /* Ensures padding doesn't affect size */
 }
@@ -347,36 +351,50 @@ input:checked + .slider::before {
   text-align: left;
 }
 
+
 .right-container .options .online-service {
   border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
-  padding: 15px 50px 5px 10px;
+  padding: 0px 10px 0px 15px;
   display: flex;
+  width: 100%;
 }
-
 
 .right-container .options .larger-storage {
   border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
-  padding: 15px 50px 5px 10px;
+  padding: 0px 10px 0px 15px;
   display: flex;
+  width: 100%;
 }
-
 
 .right-container .options .customizable-profile {
   border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
-  padding: 15px 50px 5px 10px;
+  padding: 0px 10px 0px 15px;
   display: flex;
+  width: 100%;
 }
 
 .text-content {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Adds space between the p and span */
+  gap: 5px; 
+  /* Adds space between the p and span */
+  justify-items:flex-start;
+  text-align: justify;
 }
 
 .text-content span {
   font-size: 12px;
   color: gray;
 }
+
+.right-container .options .online-service {
+  border: 1.8px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  padding: 0px 10px 0px 15px;
+  display: flex;
+  width: 100%;
+}
+

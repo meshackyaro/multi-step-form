@@ -13,13 +13,13 @@
   <body>
     <div class="main-container1">
       <ul class="side-bar">
-        <div>
+        <div onclick="location.href='../index.html'">
           <p class="p-tag-1">1</p>
           <div class="step-1">
             <p>STEP 1 <span>YOUR INFO</span></p>
           </div>
         </div>
-        <div>
+        <div onclick="location.href='../pages/step-2-monthly.html'">
           <p class="p-tag-1">2</p>
           <div class="step-2">
             <p>STEP 2 <span>SELECT PLAN</span></p>
@@ -52,9 +52,11 @@
                 <input type="checkbox" />
                 <span class="checkmark"></span>
               </label>
-              <p class="online">Online service</p>
-              <span>Access to multiplayer games</span>
-              <p>+$10/yr</p>
+              <div class="text-content">
+                <p class="online">Online service</p>
+                <span>Access to multiplayer games</span>
+              </div>
+              <p>+$1/mo</p>
             </div>
 
             <div class="larger-storage">
@@ -62,9 +64,11 @@
                 <input type="checkbox" />
                 <span class="checkmark"></span>
               </label>
-              <p class="storage">Larger storage</p>
-              <span>Extra 1TB of cloud save</span>
-              <p>+$20/yr</p>
+              <div class="text-content">
+                <p class="storage">Larger storage</p>
+                <span>Extra 1TB of cloud save</span>
+              </div>
+              <p>+$2/mo</p>
             </div>
 
             <div class="customizable-profile">
@@ -72,15 +76,18 @@
                 <input type="checkbox" />
                 <span class="checkmark"></span>
               </label>
-              <p class="profile">Customizable profile</p>
-              <span>Custom theme on your profile</span>
-              <p>+$20/yr</p>
+              <div class="text-content">
+                <p class="profile">Customizable profile</p>
+                <span>Custom theme on your profile</span>
+              </div>
+              <p>+$2/mo</p>
             </div>
           </div>
         </div>
         <div class="buttons">
-          <button class="right-button">Go Back</button>
-          <button class="left-button">Next Step</button>
+          <button onclick="location.href='../pages/step-2-monthly.html'" class="left-button">Go Back</button>
+          <button class="right-button">Next Step</button>
+        </div>     
         </div>
       </div>
     </div>
