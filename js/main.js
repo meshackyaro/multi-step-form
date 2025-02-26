@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const profile = document.getElementById("online-service");
   const largerStorage = document.getElementById("larger-storage");
   const customProfile = document.getElementById("custom-profile");
-    const savedPlan = localStorage.getItem("dom101") || "monthly";
+  const savedPlan = localStorage.getItem("dom101") || "monthly";
 
   const yearlyContent = `
     <div class="monthly-arcade">
@@ -48,15 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>2 months free</p>
 
     </div>`;
-  billingPlans.innerHTML = savedPlan === 'yearly'? yearlyContent:monthlyContent;
-    toggleSwitch.checked = savedPlan === "yearly";
+  billingPlans.innerHTML =
+    savedPlan === "yearly" ? yearlyContent : monthlyContent;
+  toggleSwitch.checked = savedPlan === "yearly";
 
   toggleSwitch.addEventListener("change", () => {
     billingPlans.innerHTML = toggleSwitch.checked
       ? yearlyContent
       : monthlyContent;
-      localStorage.setItem("dom101",toggleSwitch.checked ? 'yearly ': 'monthly');
+    localStorage.setItem(
+      "dom101",
+      toggleSwitch.checked ? "yearly " : "monthly"
+    );
   });
-
-  
 });
