@@ -47,51 +47,29 @@
             </h4>
           </div>
           <div class="options">
-            <div class="online-service">
-              <label class="custom-checkbox">
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-              <div class="text-content">
-                <p class="online">Online service</p>
-                <span>Access to multiplayer games</span>
-              </div>
-              <p>+$1/mo</p>
-            </div>
-
-            <div class="larger-storage">
-              <label class="custom-checkbox">
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-              <div class="text-content">
-                <p class="storage">Larger storage</p>
-                <span>Extra 1TB of cloud save</span>
-              </div>
-              <p>+$2/mo</p>
-            </div>
-
-            <div class="customizable-profile">
-              <label class="custom-checkbox">
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-              <div class="text-content">
-                <p class="profile">Customizable profile</p>
-                <span>Custom theme on your profile</span>
-              </div>
-              <p>+$2/mo</p>
-            </div>
+  
           </div>
         </div>
         <div class="buttons">
           <button onclick="location.href='../pages/step-2-monthly.html'" class="left-button">Go Back</button>
-          <button class="right-button">Next Step</button>
+          <button class="right-button">Next Step </button>
         </div>     
         </div>
       </div>
     </div>
 
-    <script src="../js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const setting = localStorage.getItem("dom101")
+        const profile = document.getElementById("online-service");
+        const largerStorage = document.getElementById("larger-storage");
+        const customProfile = document.getElementById("custom-profile");
+        const savedPlan = localStorage.getItem("billingType");
+        const isYearly = savedPlan === "yearly";
+        profile.textContent = isYearly ? "+$10/yr" : "+$1/mo";
+        largerStorage.textContent = isYearly ? "+$20/yr" : "+$2/mo";
+        customProfile.textContent = isYearly ? "+$20/yr" : "+$2/mo";
+      })
+    </script>
   </body>
 </html>

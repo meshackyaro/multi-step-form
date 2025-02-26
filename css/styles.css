@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -153,7 +153,7 @@ input::placeholder {
 }
 
 .right-container .right-button {
-  background-color: #03295a;
+  background-color: #03295A;
   color: #fff;
   font-size: 11px;
   font-weight: bold;
@@ -167,6 +167,7 @@ input::placeholder {
     cursor: pointer;
   }
 }
+
 .right-container .select-plan {
   font-size: 30px;
 }
@@ -183,8 +184,11 @@ input::placeholder {
   margin-top: 50px;
   width: 55vh;
   gap: 15px;
+  height:200px;
 }
-
+.right-container .billing-plans >*{
+  height :150px;
+}
 .right-container .billing-plans .monthly-arcade {
   border: 1.8px solid rgb(204, 204, 204);
   border-radius: 5px;
@@ -201,7 +205,7 @@ input::placeholder {
 
 .right-container .billing-plans .pro {
   margin-top: 30px;
-}
+} 
 
 .right-container .billing-plans .monthly-advanced {
   border: 1.8px solid rgb(204, 204, 204);
@@ -214,7 +218,16 @@ input::placeholder {
   border-radius: 5px;
   padding: 15px 50px 5px 10px;
 }
-
+.monthly-pro > p, .monthly-arcade> p, .monthly-advanced{
+  white-space:nowrap;
+}
+.text{
+  margin-top: 30px;
+  color: #03295A;
+}
+/* .right-container .billing-plans .pro{
+  margin-top: 30px;
+} */
 .right-container .buttons {
   display: flex;
   align-items: flex-end;
@@ -397,4 +410,62 @@ input:checked + .slider::before {
   display: flex;
   width: 100%;
 }
+
+.right-container .finishing-up {
+  font-size: 30px;
+}
+
+
+.right-container .finishing-up span {
+  font-size: 11px;
+  color: gray;
+  display: block;
+}
+
+.right-container .plan-summary {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(239,239,239);
+}
+
+.right-container .arcade {
+  display: flex;
+  flex-direction: row;
+  gap: 5px; 
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  /* border-bottom: 1px solid rgb(204, 204, 204); */
+}
+
+.right-container .arcade p {
+  color: 03295A;
+}
+
+.right-container .service-storage div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 20px 10px ;
+}
+ 
+.balance {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 20px 10px;
+}
+
+.balance span {
+  color: rgb(72,62,255) !important;
+  font-size: 13px !important;
+  font-weight: bold;
+}
+
 

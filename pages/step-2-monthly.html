@@ -41,13 +41,13 @@
       <div class="right-container">
         <div class="select-plan">
           <div>
-            <h4>
+            <h4 style='color:#03295A'>
               Select your plan
               <span>You have the option of monthly or yearly billing</span>
             </h4>
           </div>
           <div class="billing-plans">
-            <div class="monthly-arcade">
+            <!-- <div class="monthly-arcade">
               <img src="../assets/icon-arcade.svg" alt="arcade" />
               <p>Arcade</p>
               <span>$9/mon</span>
@@ -63,23 +63,23 @@
               <img src="../assets/icon-pro.svg" alt="arcade" />
               <p>Pro</p>
               <span>$15/mon</span>
-            </div>
+            </div> -->
           </div>
           <div class="monthly-yearly-toggle">
             <p class="monthly">Monthly</p>
-            <label onclick="location.href='../pages/step-2-yearly.html'" class="toggle">
-              <input type="checkbox" id="toggle-switch" />
+            <label class="toggle">
+              <input type="checkbox" id="toggle-switch"/>
               <span class="slider"></span>
             </label>
             <span class="yearly">Yearly</span>
           </div>
         </div>
         <div class="buttons">
-          <button onclick="location.href='../index.html'" class="right-button">
+          <button onclick="location.href='../index.html'" class="left-button">
             Go Back
           </button>
-          <button
-            onclick="location.href='../pages/step-2-yearly.html'"
+          <button id="step2-nextbutton"
+           onclick="location.href='../pages/step-3-add-ons-monthly.html'" 
             class="right-button"
           >
             Next Step
